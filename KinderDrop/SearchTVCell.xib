@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11762" systemVersion="16D30" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="SearchTVCell" id="KGk-i7-Jjw" customClass="SearchTVCell" customModule="KinderDrop" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="50"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="49.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="MN4-BH-2hq">
+                        <rect key="frame" x="10" y="4" width="300" height="22"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="22" id="ays-jS-PBL"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" weight="medium" pointSize="17"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fRW-UP-cu2">
+                        <rect key="frame" x="0.0" y="48.5" width="320" height="1"/>
+                        <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="1" id="cvM-K7-RiP"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mQi-9d-9ZQ">
+                        <rect key="frame" x="10" y="28" width="300" height="18"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="18" id="d2v-ph-h8x"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                        <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="fRW-UP-cu2" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="2fH-Jp-BUT"/>
+                    <constraint firstAttribute="trailing" secondItem="fRW-UP-cu2" secondAttribute="trailing" id="B7T-y7-p2N"/>
+                    <constraint firstItem="mQi-9d-9ZQ" firstAttribute="top" secondItem="MN4-BH-2hq" secondAttribute="bottom" constant="2" id="OKj-1c-Fw8"/>
+                    <constraint firstAttribute="trailing" secondItem="MN4-BH-2hq" secondAttribute="trailing" constant="10" id="Ony-ku-Gul"/>
+                    <constraint firstItem="MN4-BH-2hq" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="4" id="Orr-ki-Jgn"/>
+                    <constraint firstItem="MN4-BH-2hq" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="10" id="aDI-Hi-1rk"/>
+                    <constraint firstItem="fRW-UP-cu2" firstAttribute="top" secondItem="mQi-9d-9ZQ" secondAttribute="bottom" constant="2.5" id="uaR-Hh-TqO"/>
+                    <constraint firstAttribute="trailing" secondItem="mQi-9d-9ZQ" secondAttribute="trailing" constant="10" id="vOn-cd-oE9"/>
+                    <constraint firstAttribute="bottom" secondItem="fRW-UP-cu2" secondAttribute="bottom" id="w8h-rw-mmG"/>
+                    <constraint firstItem="mQi-9d-9ZQ" firstAttribute="top" secondItem="MN4-BH-2hq" secondAttribute="bottom" constant="2" id="wnK-bz-VBy"/>
+                    <constraint firstItem="mQi-9d-9ZQ" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="10" id="zzj-Nd-poT"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="dayCrNmLbl" destination="mQi-9d-9ZQ" id="4vl-8f-xXR"/>
+                <outlet property="nameLblSrch" destination="MN4-BH-2hq" id="jm8-AC-MXq"/>
+            </connections>
+        </tableViewCell>
+    </objects>
+</document>
